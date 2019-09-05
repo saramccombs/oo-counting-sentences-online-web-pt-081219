@@ -28,5 +28,6 @@ class String
   # method returns the numbr of sentences within a string
   def count_sentences
     self.split(/\.|\?|\!/).delete_if {|sentence| sentence.size < 2 }.count
+    binding.pry
   end
 end
